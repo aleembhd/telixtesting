@@ -708,11 +708,11 @@
         async function getExcludedButtons() {
             try {
                 const snapshot = await firebase.database().ref('excludedButtons').once('value');
-                excludedButtons = snapshot.val() || [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // Keep your existing excluded buttons
+                excludedButtons = snapshot.val() || [0,1,12,13,14,15]; // Keep your existing excluded buttons
                 return excludedButtons;
             } catch (error) {
                 console.error('Error fetching excludedButtons:', error);
-                return [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // Default fallback
+                return [0,1,12,13,14,15]; // Default fallback
             }
         }
 
