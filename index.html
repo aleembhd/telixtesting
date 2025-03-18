@@ -1206,7 +1206,7 @@
             .catch(error => console.error('Error pre-fetching names:', error));
 
         // Add this after Firebase initialization
-        const excludedButtons = [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // Global excludedButtons array
+        const excludedButtons = [0,1,12,13,14,15]; // Global excludedButtons array
 
         // Add this right after your Firebase initialization
         let hamburgerPressTimer;
@@ -1352,7 +1352,7 @@
             let currentRole = '';
 
             telecallerBtn.addEventListener('click', function() {
-                const excludedButtons = [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // Add any numbers you want to exclude here
+                const excludedButtons = [0,1,12,13,14,15]; // Add any numbers you want to exclude here
                 const telecallerModal = document.createElement('div');
                 telecallerModal.className = 'modal';
                 telecallerModal.style.display = 'block';
@@ -1960,7 +1960,7 @@
                     managerModal.style.display = 'block';
                     
                     // Define buttons to exclude
-                    const excludedButtons = [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+                    const excludedButtons = [0,1,12,13,14,15];
                     
                     // Filter out excluded buttons when creating the HTML
                     const buttonsHtml = Array.from({ length: 16 }, (_, i) => {
@@ -2080,7 +2080,7 @@
                 telecallerModal.className = 'modal';
                 telecallerModal.style.display = 'block';
                 
-                const excludedButtons = [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; // Button numbers to exclude
+                const excludedButtons = [0,1,12,13,14,15]; // Button numbers to exclude
                 
                 // Use cached names or empty object if cache not ready
                 const names = cachedNames || {};
